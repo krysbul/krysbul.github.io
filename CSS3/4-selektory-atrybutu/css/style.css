@@ -1,0 +1,18 @@
+[title]{
+    color:lightcoral;
+}
+
+a[title="Section"]{
+    color:lightseagreen;
+}
+
+a[title~="Container"]{
+    color:blueviolet;
+}
+
+a[title$="on"]{
+    color:orange;
+}
+
+
+
