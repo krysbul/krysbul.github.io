@@ -1,0 +1,90 @@
+
+form{
+    background-color: #213b50;
+    padding:20px;
+    color:#fff;
+    width:600px;
+}
+
+label{
+    display: block;
+    margin: 5px 0 5px 0;
+    
+}
+
+form select, form input{
+    width:300px;
+    height:25px;
+    background-color: #2b4a64;
+    border: solid 1.5px rgba(255, 255, 255, 0);
+    color:white;
+}
+
+
+form select:focus, form input:focus{
+    width:300px;
+    height:25px;
+    background-color: #4e708c;
+    border: solid 1.5px white;
+    outline: none;
+    color:white;
+}
+
+form textarea{
+    height:100px;
+    width:300px;
+    background-color: #2b4a64;
+    border: solid 1.5px rgba(255, 255, 255, 0);
+    color:white;
+}
+form textarea:focus{
+    height:100px;
+    width:300px;
+    background-color: #4e708c;
+    border: solid 1.5px white;
+    outline: none;
+    color:white;
+}
+
+
+/* 
+form input[type="text"], form input[type="email"], form input[type="tel"]{
+    width:300px;
+    height:25px;
+    background-color: #2b4a64;
+    border: none;
+    outline:none;
+} */
+
+#female{
+    width:auto;
+    height:auto;
+    float:left;
+}
+
+#male{
+    width:auto;
+    height:auto;
+    float:left;
+}
+
+#agreement{
+    width:auto;
+    height:auto;
+    float:left;
+}
+
+form input[type='submit']{
+    background-color: green;
+    padding:10px;
+    width:auto;
+    height:auto;
+    font-weight:bold;
+}
+form input[type='submit']:hover{
+    background-color: lightgreen;
+    padding:10px;
+    width:auto;
+    height:auto;
+    font-weight:bold;
+}
