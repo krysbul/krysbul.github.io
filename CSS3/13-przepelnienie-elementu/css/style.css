@@ -1,30 +1,27 @@
+*{
+    text-align: justify;
+}
 .box{
-    width: 100px;
-    height: 100px;
-}
-
-#colors{
-    background-color: red;
-    transition-property: background-color;
-    transition-duration: 2s;
-}
-
-#colors:hover{
-    background-color: yellow;
-}
-
-.box-width{
-    background-color: teal;
-    position:absolute;
-    left:20%;
-    transition: width 2s, background-color 2s, height 2s, transform 2s;
-    transform: rotate(0turn);
-  
-}
-
-.box-width:hover{
-    background-color:red;
     width:300px;
-    height:300px;
-    transform: rotate(1turn);
+    height: 150px;
+    background-color: palegreen;
+    border: 5px solid olivedrab;
+    margin:50px;
+    padding: 10px;;
+}
+#visible{
+    overflow: visible;
+}
+
+#hidden{
+    overflow: hidden;
+}
+
+#scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#auto{
+    overflow: auto;
 }
