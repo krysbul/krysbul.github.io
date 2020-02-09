@@ -1,0 +1,44 @@
+.container{
+    position: absolute;
+    top: 200px;
+    left:-800px;
+    transform: translateX(0px);
+    transition-property:transform;
+    transition-duration: 2s;
+   
+}
+
+.container:hover{
+    position: absolute;
+    top: 200px;
+    transform: translateX(1000px) rotate(0.9turn) translateY(200px);
+    
+}
+
+#j1{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FFC962;
+}
+
+#j2{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FFC962;
+    position:absolute;
+    top:200px;
+}
+
+#k{
+    width:800px;
+    height: 200px;
+    border-radius:45%;
+    background-color: #FFC962;
+    position:absolute;
+    top:100px;
+    left:70px;
+
+}
+
