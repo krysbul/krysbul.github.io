@@ -1,0 +1,68 @@
+*{
+    font-family: Arial;
+}
+form{
+    background-color: grey;
+    width:500px;
+    padding:20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+label{
+    display: block;
+    margin: 5px 0 5px 0;
+}
+
+form input, form select{
+    background-color: lightgrey;
+    width:350px;
+    height:25px;
+    border:0.5px solid rgba(0, 0, 0, 0);
+}
+
+form input:focus, form select:focus{
+    background-color: darkgrey;
+    width:350px;
+    height:25px;
+    outline: none;
+    border:0.5px solid black;
+}
+
+form textarea{
+    background-color: lightgrey;
+    display:block;
+    width:350px;
+    max-width: 450px;
+    height:150px;
+}
+
+form textarea:focus{
+    background-color: darkgrey;
+    display:block;
+    width:350px;
+    max-width: 450px;
+    height:150px;
+    outline: none;
+}
+
+#male, #female, #zgoda{
+    float:left;
+    width:auto;
+    height:auto;
+}
+
+button{
+    background-color: rgb(50, 49, 51);
+    border:none;
+    font-weight: bold;
+    padding:5px;
+    font-size:20px;
+}
+
+button:hover{
+    background-color: rgb(105, 102, 107);
+    border:none;
+    font-weight: bold;
+    padding:5px;
+}
