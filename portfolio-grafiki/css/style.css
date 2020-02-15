@@ -1,0 +1,20 @@
+*{
+    font-family: "Open Sans" , sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+header{
+    background-image: url("img/header.jpg");
+    background-repeat: no-repeat;
+    height:500px;
+    text-align: center;
+}
+
+h1{
+    color:#007bff;
+    border-bottom: solid 2px #007bff;
+    padding:10px;
+    font-size:3em;
+}
+
