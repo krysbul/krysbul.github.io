@@ -1,0 +1,25 @@
+    img {
+        height:250px;
+        width:auto;
+        transition: all 5s;
+    }
+
+    .animation img{
+        animation-name:have-fun;
+        animation-duration: 3s;
+        animation-iteration-count:infinite;
+    }
+
+    @keyframes have-fun {
+        0%, 100% {
+        border:solid 10px purple;
+        width: 90%;
+        
+        }
+        50% {
+        border: dashed 15px green;
+        padding:10px;
+        width: 50%;
+        height:500px;
+        }
+        }

@@ -1,4 +1,4 @@
-.container{
+/* .container{
     position: absolute;
     top: 200px;
     left:-800px;
@@ -13,7 +13,30 @@
     top: 200px;
     transform: translateX(1000px) rotate(0.9turn) translateY(200px);
     
+} */
+
+.container{
+    animation-name:have-fun;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
 }
+
+@keyframes have-fun {
+    0%, 100% {
+        position: absolute;
+        top: 200px;
+        left:-800px;
+        transform: translateX(0px);
+        transition-property:transform;
+        transition-duration: 2s;
+    
+    }
+    50% {
+        position: absolute;
+        top: 200px;
+        transform: translateX(1000px) rotate(0.9turn) translateY(200px);
+    }
+    }
 
 #j1{
     width:200px;
