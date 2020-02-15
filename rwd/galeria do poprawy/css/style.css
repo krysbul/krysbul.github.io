@@ -33,3 +33,43 @@ figure img{
 	width: 100%;
 	border: 2px solid #444;
 }
+
+@media(min-width:992px){
+	#gallery{
+		width:90%;
+	}
+
+	figure{
+		width:33%;
+	}
+}
+
+@media(min-width:768px) and (max-width:992px){
+	#gallery{
+		width:90%;
+	}
+
+	figure{
+		width:45%;
+	}
+}
+
+@media(max-width:768px){
+	#gallery{
+		width:80%;
+	}
+
+	figure{
+		width:100%;
+	}
+}
+
+@media(max-width:480px){
+	#gallery{
+		width:100%;
+	}
+
+	figure{
+		width:100%;
+	}
+}
