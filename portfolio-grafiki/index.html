@@ -4,16 +4,103 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7e072d8cdf.js" crossorigin="anonymous"></script>
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Główna</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1 class="gorny">FRONT END DEVELOPER</h1>
-        <br>
-        <p>HTML &bull; CSS &bull; JavaScript</p>
-        <br>
-        <a href="">DOWIEDZ SIĘ WIĘCEJ</a>
+    <header class="main">
+        <h1 class="flex-head">FRONT END DEVELOPER</h1>
+        <hr class="flex-head"><br>
+        <span class="flex-head">HTML <b style="color: #007bff;">&bull;</b> CSS <b style="color: #007bff;">&bull;</b> JavaScript</span><br>
+        <a class="btn flex-head" href="#omnie">DOWIEDZ SIĘ WIĘCEJ</a><br>
     </header>
+    <nav class="menu">
+        <li><a href="#omnie">O MNIE</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#kontakt">KONTAKT</a></li>
+    </nav>
+
+    <section id="omnie">
+        <div class="container">
+        <h2>O MNIE</h2>
+        <hr>
+        <img src="img/about.jpg" alt="O mnie" id="about">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius cum inventore a sit labore earum, corporis, 
+            dolorem ad, commodi voluptatem accusantium quae natus dolores tenetur magni. Eum voluptas quod reprehenderit!</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, fugit ratione deleniti 
+            error mollitia quaerat similique inventore, illum non dolorem optio incidunt dignissimos ullam maxime, excepturi 
+            molestias commodi velit. Ab!</p><br>
+        <a class="btn" href="#portfolio">MOJE PORTFOLIO</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container gallery">
+            <h2>PORTFOLIO</h2>
+            <hr>
+            <div class="zdj">
+                <img src="img/portfolio/photo-1.jpg" alt="Photo-1" class="photo">
+                <img src="img/portfolio/photo-2.jpg" alt="Photo-2" class="photo">
+                <img src="img/portfolio/photo-3.jpg" alt="Photo-3" class="photo">
+                <img src="img/portfolio/photo-4.jpg" alt="Photo-4" class="photo">
+                <img src="img/portfolio/photo-5.jpg" alt="Photo-5" class="photo">
+                <img src="img/portfolio/photo-6.jpg" alt="Photo-6" class="photo">
+                <img src="img/portfolio/photo-7.jpg" alt="Photo-7" class="photo">
+                <img src="img/portfolio/photo-8.jpg" alt="Photo-8" class="photo">
+                <img src="img/portfolio/photo-9.jpg" alt="Photo-9" class="photo">
+                <img src="img/portfolio/photo-10.jpg" alt="Photo-10" class="photo">
+                <img src="img/portfolio/photo-11.jpg" alt="Photo-11" class="photo">
+                <img src="img/portfolio/photo-12.jpg" alt="Photo-12" class="photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt">
+        <div class="container">
+            <h2>KONTAKT</h2>
+            <hr>
+            <form action="https://formspree.io/mlebkvyj" method="POST">
+                <input type="text" name="imie" placeholder="Imię">
+                <input type="text" name="replayto" placeholder="Email"><br>
+                <textarea name="message" placeholder="Wiadomość"></textarea><br>
+                <button type="submit" class="btn">WYŚLIJ WIADOMOŚĆ</button>
+          </form>
+            
+            <div class="social">
+                <a class="linksoc" href="http://facebook.com" target="blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a class="linksoc" href="http://twitter.com" target="blank"><i class="fab fa-twitter fa-3x"></i></a>
+                <a class="linksoc" href="http://instagram.com" target="blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <a class="linksoc" href="http://youtube.com" target="blank"><i class="fab fa-youtube fa-3x"></i></a>
+            </div>
+        </div>
+
+        <footer class="container gallery">
+            <p>Copyright &copy; DOSKOZZZA</p>
+        </footer>
+
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() { 
+
+         $('a[href^="#"]').on('click', function(event) {
+
+         var target = $( $(this).attr('href') );
+
+         if( target.length ) {
+            event.preventDefault();
+            $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 800);
+        }
+        });
+    });
+    </script>
+
 </body>
 </html>
