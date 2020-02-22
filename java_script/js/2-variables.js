@@ -7,6 +7,7 @@ let age = 37;
 let color = "czerwony";
 
 name = "Sergio";
+console.log("przed napisaniem", name);
 
 name = ladyName;
 
