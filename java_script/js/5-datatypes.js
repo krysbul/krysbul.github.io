@@ -20,7 +20,7 @@ console.log("wholeSaleryStr", wholeSaleryStr);
 let isSmog;
 isSmog = false;
 
-if(isSmog){
+if(isSmog === false){
     console.log("Jest SMOG");
 }
 else{
